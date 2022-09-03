@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Herói</title>
+</head>
+<body>
+	<script lang="javascript">
+
+		var universo = prompt("Escolha o universo: \n MARVEL - DC");
+		var heroi = prompt("Escolha o seu herói favorito");
+		var repetir = prompt("Quantas vezes deseja exibir o seu herói?");
+
+		if(universo=='MARVEL'){
+			if(heroi=='Loki' || heroi=='Thor'){
+			document.write("O herói escolhido é: " + heroi);
+				for(i=0; i < repetir ; i ++){
+					document.write(`<br><img src='img/${heroi}.jpg' width='200'>`);
+				}
+			} else{
+				document.write("Herói Inválido!");
+			}
+		} else if (universo=='DC'){
+			if(heroi=='Batman' || heroi=='Superman'){
+			document.write("O herói escolhido é: " + heroi);
+			for(i=0; i < repetir ; i ++){
+				document.write(`<br><img src='img/${heroi}.jpg' width='200'>`);
+			}
+			}else{
+				document.write("Herói Inválido!");
+			}
+		}else{
+			document.write("O universo digitado é inválido!");
+		}
+
+	</script>
+
+	
+</body>
+</html>
