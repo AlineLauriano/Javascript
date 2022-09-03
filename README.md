@@ -1,2 +1,2 @@
-# Javascript---Fun-es
-Exercício de herois.
+# Javascript Funcões
+Exercício de heróis.
